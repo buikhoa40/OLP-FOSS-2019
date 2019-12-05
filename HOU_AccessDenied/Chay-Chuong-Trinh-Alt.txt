@@ -1,0 +1,19 @@
+Cách chạy khác (Không Cần Sử Dụng Docker):
+
+HOU_AccessDenied/app/index.html:
+	thay thế tại dòng:
+		<script src="http://172.17.0.1:3000/socket.io/socket.io.js"></script>
+	thành:
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>	
+	để đổi server từ docker sang localhost
+
+Commands:
+$		cd HOU_AccessDenied/app && node ./index.js
+$		cd HOU_AccessDenied/server && node ./tictactoe.js
+
+
+Access:
+$		http://localhost:8080
+
+Nên truy cập từ hai thiết bị...
+
